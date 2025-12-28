@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f4f7f9;
+  color: #333;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0a4f5c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.logo {
+  margin: 0;
+}
+
+section {
+  padding: 100px 10%;
+  min-height: 100vh;
+}
+
+#home {
+  background: linear-gradient(135deg, #0a4f5c, #1f7a8c);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  color: #0a4f5c;
+}
+
+ul {
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0a4f5c;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section {
+    padding: 80px 5%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+button {
+  padding: 12px;
+  background-color: #0a4f5c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1f7a8c;
+}
+
+#formStatus {
+  text-align: center;
+  margin-top: 10px;
+  color: green;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #0a4f5c;
+}
